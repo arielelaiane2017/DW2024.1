@@ -1,0 +1,32 @@
+
+// calculadora \\
+function calcularOperacao(valor1, valor2, operador) {
+    let resultado;
+
+    switch (operador) {
+        case '+':
+            resultado = valor1 + valor2;
+            break;
+        case '-':
+            resultado = valor1 - valor2;
+            break;
+        case '*':
+            resultado = valor1 * valor2;
+            break;
+        case '/':
+            resultado = valor1 / valor2;
+            break;
+        default:
+            console.log("Operador inválido.");
+            return;
+    }
+
+    console.log(resultado);
+}
+
+
+
+calcularOperacao(10, 5, '+'); 
+calcularOperacao(10, 5, '-'); 
+calcularOperacao(10, 5, '*'); 
+calcularOperacao(10, 5, '/'); 
